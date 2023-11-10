@@ -23,14 +23,14 @@ En este ejercicio, crearemos un juego de "Piedra, Papel o Tijera" utilizando HTM
 ## Consejos
 
 1. Revisa que es el dataset para acceder al valor de jugada de cada botón
-2. Puedes usar un foreach en cada uno de los botónes
+2. Puedes usar un foreach en cada uno de los botones
 3. Usa Math.ramdom() para generar aleatoriedad
 4. Adapta el HTML y CSS si lo ves necesario
 
 ## La estructura podría ser la siguiente:
 
-- Opciones en un array
-- Variables puntos usuario
+- Opciones en un array 
+- Variables puntos usuario 
 - Variables puntos ordenador
 - Capturar los botones para usarlos (plantea usar un forEach) y hacer evento click
 - Capturar resultados
