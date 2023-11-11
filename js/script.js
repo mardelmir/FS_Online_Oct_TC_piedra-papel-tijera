@@ -7,11 +7,7 @@ const resultados = document.getElementById('resultados');
 const ronda = document.createElement('p');
 resultados.appendChild(ronda);
 
-const botones = [botonPiedra, botonPapel, botonTijera];
-
-document.addEventListener('click', botones.forEach(comparar));
-
-function comparar() {
+botonPiedra.addEventListener('click', function () {
     const jugador = 1;
     const ordenador = Math.floor(Math.random() * 3);
 
@@ -22,4 +18,31 @@ function comparar() {
     } else {
         ronda.textContent = 'Empate'
     }
-}
+})
+
+botonPapel.addEventListener('click', function () {
+    const jugador = 1;
+    const ordenador = Math.floor(Math.random() * 3);
+
+    if (jugador > ordenador) {
+        ronda.textContent = 'Victoria';
+    } else if (jugador < ordenador) {
+        ronda.textContent = 'Derrota';
+    } else {
+        ronda.textContent = 'Empate'
+    }
+})
+
+botonTijera.addEventListener('click', function () {
+    const jugador = 1;
+    const ordenador = Math.floor(Math.random() * 3);
+
+    if (jugador > ordenador) {
+        ronda.textContent = 'Victoria';
+    } else if (jugador < ordenador) {
+        ronda.textContent = 'Derrota';
+    } else {
+        ronda.textContent = 'Empate'
+    }
+})
+
